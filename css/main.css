@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -10,11 +11,40 @@ body {
   margin: 0;
 }
 
-h2 {
-  font-family: "Open Sans", sans-serif;
+.banner-content h2 {
   font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-p {
+.banner-content p {
   font-size: 2rem;
+  margin-bottom: .5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.banner {
+  max-height: 500px;
+  position: relative;
+}
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.banner-content {
+  max-width: 50em;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: .3rem;
+}
+
+.banner-content h2 span {
+  background-color: rgba(0, 0, 0, .5);
+  overflow: hidden;
 }
